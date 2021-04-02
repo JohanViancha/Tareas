@@ -1,0 +1,16 @@
+<div>
+    <form action="">
+        <h3>Registro de tareas</h3>
+
+        <label for="">Nombre</label>
+        <br>
+        <input type="text" name="nombre" [(ngModel)]="mitarea.nombre">
+        <br>
+        <label for="">Descripción</label>
+        <br>
+        <input type="text" name="descripcion" [(ngModel)]="mitarea.descripcion">
+        <br>
+        <button (click)="enviar()">Enviar</button>
+    </form>
+
+</div>

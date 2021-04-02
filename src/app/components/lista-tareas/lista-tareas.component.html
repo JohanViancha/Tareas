@@ -1,0 +1,16 @@
+<div ng-bind-html-unsafe="item">
+    <h3>Lista de tareas</h3>
+    <ul id="lista" name="lista">
+        <li [ngClass]="{completo:mitarea.estado,incompleto:!mitarea.estado}" *ngFor="let mitarea of tarea; let i = index">
+            <h4>{{mitarea.nombre}}</h4>
+
+            <p>{{mitarea.descripcion}}</p>
+
+            <button (click)="actualizarTarea(mitarea)">{{mitarea.estado ? 'Incompleto' : 'Completo'}}</button>
+            <button (click)="borrarTarea(i)">Borrar</button>
+        </li>
+
+    </ul>
+
+
+</div>
