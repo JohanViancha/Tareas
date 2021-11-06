@@ -1,11 +1,7 @@
 div {
-    float: left;
-    width: 450px;
     height: auto;
     overflow: hidden;
-    border: 2px solid #000;
-    margin: 40px;
-    padding: 30px;
+    padding:10px 0px;
     font-size: 18px;
 }
 
@@ -19,12 +15,18 @@ li {
     color: white;
     padding: 30px;
     border-radius: 15px;
+    margin: 10px 0px;
 }
 
 .completo {
-    background-color: lightgreen;
+    background-color: rgb(57, 109, 43);
 }
 
 .incompleto {
-    background-color: lightpink;
+    background-color: rgb(179, 33, 33);
+}
+
+.group-btn{
+  display: flex;
+  justify-content: space-around;
 }

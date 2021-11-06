@@ -5,9 +5,14 @@
             <h4>{{mitarea.nombre}}</h4>
 
             <p>{{mitarea.descripcion}}</p>
+            <hr>
 
-            <button (click)="actualizarTarea(mitarea)">{{mitarea.estado ? 'Incompleto' : 'Completo'}}</button>
-            <button (click)="borrarTarea(i)">Borrar</button>
+            <div class="group-btn">
+
+              <button class="btn btn-outline-light" (click)="actualizarTarea(mitarea)">{{mitarea.estado ? 'Incompleto' : 'Completo'}}</button>
+              <button class="btn btn-outline-warning" (click)="borrarTarea(i)">Borrar</button>
+            </div>
+
         </li>
 
     </ul>

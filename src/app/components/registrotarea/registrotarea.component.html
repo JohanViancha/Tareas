@@ -1,16 +1,23 @@
-<div>
-    <form action="">
-        <h3>Registro de tareas</h3>
+<div class="content-registro">
+    <form action="" class="form-registr form-group
 
+    ">
+      <div class="group-registro">
+        <h3>Registro de tareas</h3>
+      </div>
+      <div class="group-registro">
         <label for="">Nombre</label>
         <br>
-        <input type="text" name="nombre" [(ngModel)]="mitarea.nombre">
-        <br>
+        <input class="form-control" type="text" name="nombre" [(ngModel)]="mitarea.nombre">
+      </div>
+      <div class="group-registro">
         <label for="">Descripción</label>
         <br>
-        <input type="text" name="descripcion" [(ngModel)]="mitarea.descripcion">
-        <br>
-        <button (click)="enviar()">Enviar</button>
+        <textarea class="form-control" rows="5" cols="24" name="descripcion" [(ngModel)]="mitarea.descripcion"></textarea>
+      </div>
+      <div class="group-registro">
+        <button class="btn btn-outline-primary" (click)="enviar()">Enviar</button>
+      </div>
     </form>
 
 </div>

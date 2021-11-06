@@ -1,3 +1,10 @@
-<app-registrotarea (tarea)="regisrar_tarea($event)"></app-registrotarea>
+<div class="header-app">
+  <h3>Gestión de tareas</h3>
+</div>
 
-<app-lista-tareas [tarea]="tarea"></app-lista-tareas>
+<div class="content-app">
+  <app-registrotarea (tarea)="regisrar_tarea($event)"></app-registrotarea>
+
+  <app-lista-tareas [tarea]="tarea"></app-lista-tareas>
+</div>
+
