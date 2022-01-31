@@ -34,3 +34,12 @@ app-registrotarea{
 app-lista-tareas{
   width: 600px;
 }
+
+
+@media screen and (max-width:1199px) {
+
+  app-registrotarea{
+    width: 80%;
+  }
+    
+}

@@ -30,3 +30,8 @@ li {
   display: flex;
   justify-content: space-around;
 }
+
+ol, ul {
+    padding-left: 0px;
+}
+

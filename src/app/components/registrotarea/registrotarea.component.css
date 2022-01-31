@@ -22,3 +22,14 @@
 .group-registro{
   width: 50%;
 }
+
+
+
+@media screen and (max-width:1199px) {
+
+  .group-registro{
+    width: 80%;
+  }
+    
+}
+
